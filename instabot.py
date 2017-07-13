@@ -15,7 +15,7 @@ from sub_trends import sub_trends
 
 def menu():
     while True:
-        choice = raw_input(             # jai babajiii#
+        choice = raw_input(
             " 1) To get own info  \n 2) To get own post \n 3) To get friends id \n 4) To get friends info \n 5) To Get friend post id \n 6) To Like post \n 7) To comment on post \n "
             "8) To Delete negative comments from your post\n 9) To view recent Media id like by You\n 10) To view comment of the your friends post \n 11) To find the Sub-trends of an event\n 12) To compare Pos and Neg comments of your post\n 13) To exit application\n ENTER YOUR CHOICE  :- ")
         if choice.isdigit() == True:
@@ -33,13 +33,13 @@ def menu():
         elif choice == 6:
             like_a_post(insta_username)         # Calling of like_a_post() function
         elif choice == 7:
-            post_a_comment(insta_username)
+z            post_a_comment(insta_username)
         elif choice == 8:
-            delete_negative_comment()           # Calling of delete_negative_comment() function
+            delete_negative_comment()
         elif choice == 9:
             recent_media_like()             # Calling of recent_media_like() function
         elif choice == 10:
-            comment_list()             # Calling of comment_list() function
+            comment_list()
         elif choice == 11:
             sub_trends()            # Calling of sub_trends() function
         elif choice == 12:
@@ -47,6 +47,6 @@ def menu():
         elif choice == 13:
             break
         else:
-            print "\n\n[[what do you want to do]]"
+            print "\n\n[[please choose any one of the option]]"
 
 menu()
